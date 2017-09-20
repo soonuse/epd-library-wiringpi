@@ -8,16 +8,16 @@ epd2in13b.o:epd2in13b.cpp epd2in13b.h
 	$(CC) -Wall -c epd2in13b.cpp $(DLIBS)
 epdif.o:epdif.cpp epdif.h
 	$(CC) -Wall -c epdif.cpp $(DLIBS)
-font8.o:fonts.h font8.c
-	$(CC) -Wall -c font8.c
-font12.o:fonts.h font12.c
-	$(CC) -Wall -c font12.c
-font16.o:fonts.h font16.c
-	$(CC) -Wall -c font16.c
-font20.o:fonts.h font20.c
-	$(CC) -Wall -c font20.c
-font24.o:fonts.h font24.c
-	$(CC) -Wall -c font24.c
+font8.o:fonts.h font8.cpp
+	$(CC) -Wall -c font8.cpp
+font12.o:fonts.h font12.cpp
+	$(CC) -Wall -c font12.cpp
+font16.o:fonts.h font16.cpp
+	$(CC) -Wall -c font16.cpp
+font20.o:fonts.h font20.cpp
+	$(CC) -Wall -c font20.cpp
+font24.o:fonts.h font24.cpp
+	$(CC) -Wall -c font24.cpp
 epdpaint.o:epdpaint.cpp epdpaint.h
 	$(CC) -Wall -c epdpaint.cpp $(DLIBS)
 main.o:main.cpp epd2in13b.h imagedata.h

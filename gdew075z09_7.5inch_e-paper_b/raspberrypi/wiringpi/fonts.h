@@ -4,7 +4,7 @@
   * @author  MCD Application Team
   * @version V1.0.0
   * @date    18-February-2014
-  * @brief   Header for fonts.c file
+  * @brief   Header for fonts.cpp file
   ******************************************************************************
   * @attention
   *
@@ -44,20 +44,14 @@
 #define MAX_WIDTH_FONT          17
 #define OFFSET_BITMAP           54
 
-#ifdef __cplusplus
- extern "C" {
-#endif
-
 /* Includes ------------------------------------------------------------------*/
 #include <stdint.h>
 
-typedef struct _tFont
-{    
-  const uint8_t *table;
-  uint16_t Width;
-  uint16_t Height;
-  
-} sFONT;
+struct sFONT {
+    const uint8_t *table;
+    uint16_t Width;
+    uint16_t Height;
+};
 
 extern sFONT Font24;
 extern sFONT Font20;
@@ -65,10 +59,6 @@ extern sFONT Font16;
 extern sFONT Font12;
 extern sFONT Font8;
 
-#ifdef __cplusplus
-}
-#endif
-  
 #endif /* __FONTS_H */
  
 
