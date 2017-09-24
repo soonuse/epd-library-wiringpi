@@ -46,11 +46,11 @@ C libraries for Waveshare e-paper series based on WiringPi
     fortunately, in the latest version of Raspbian, wiringPi libraries are
     pre-installed.
 2.  change the current directory to where the Makefile and demo file located.
-    <pre>cd epd-demo/raspberrypi/wiringpi/</pre>
+    <code>cd epd-demo/raspberrypi/wiringpi/</code>
 3.  compile the file with: 
-    <pre>make</pre>
+    <code>make</code>
 4.  run the demo with: 
-    <pre>./epd</pre>
+    <code>./epd</code>
 ## Supported models
 1.54"/1.54" B/2.13"/2.13" B/2.7"/2.7" B/2.9"/2.9" B/4.2"/4.2 B/7.5"/ 7.5" B
 
