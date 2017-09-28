@@ -33,12 +33,12 @@ C libraries for Waveshare e-paper series based on WiringPi
 ## Hardware connection (OLED => Raspberry Pi)
   * VCC    ->    3.3
   * GND    ->    GND
-  * DIN    ->    MOSI
-  * CLK    ->    SCLK
-  * CS     ->    24 (Physical, BCM: CE0, 8)
-  * D/C    ->    22 (Physical, BCM: 25)
-  * RES    ->    11 (Physical, BCM: 17)
-  * BUSY   ->    18 (Physical, BCM: 24)
+  * DIN    ->    19 (MOSI, BCM: 10)
+  * CLK    ->    23 (SCLK, BCM: 11)
+  * CS     ->    24 (CE0, BCM: 8)
+  * D/C    ->    22 (GPIO. 6, BCM: 25)
+  * RES    ->    11 (GPIO. 0, BCM: 17)
+  * BUSY   ->    18 (GPIO. 5, BCM: 24)
 ## How to use
 ### based on WiringPi library
 1.  install the C libraries of wiringPi,
